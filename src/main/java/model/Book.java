@@ -1,7 +1,7 @@
 package model;
 
 public class Book {
-    private int id;
+    private int bookId;
     private String title;
     private String author;
     private String description;
@@ -22,8 +22,8 @@ public class Book {
         return id;
     }
 
-    public void setId(int bookId) {
-        this.id = bookId;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getTitle() {
@@ -61,7 +61,7 @@ public class Book {
     @Override
     public String toString() {
         return "Book{" +
-                "bookId=" + id +
+                "id=" + id +
                 ", title='" + title + '\'' +
                 ", author='" + author + '\'' +
                 ", description='" + description + '\'' +
